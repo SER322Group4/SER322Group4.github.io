@@ -1,6 +1,6 @@
 ﻿<html xmlns = "http://www.w3.org/1999/xhtml">
 <head>
-<title>Sample form to take user input in XHTML</title>
+<title>Baseball Statistics</title>
 <style type = "text/css">
 .prompt { color: Black;
 font-family: sans-serif;
@@ -46,14 +46,14 @@ Inning: <br />
 <select inning = "inn"> <br />
 <option value  =""?>Select...</option>
 <option value  = "1"?>1</option>
-<option value  = "1"?>2</option>
-<option value  = "1"?>3</option>
-<option value  = "1"?>4</option>
-<option value  = "1"?>5</option>
-<option value  = "1"?>6</option>
-<option value  = "1"?>7</option>
-<option value  = "1"?>8</option>
-<option value  = "1"?>9</option>
+<option value  = "2"?>2</option>
+<option value  = "3"?>3</option>
+<option value  = "4"?>4</option>
+<option value  = "5"?>5</option>
+<option value  = "6"?>6</option>
+<option value  = "7"?>7</option>
+<option value  = "8"?>8</option>
+<option value  = "9"?>9</option>
 </select>
 </p>
 
