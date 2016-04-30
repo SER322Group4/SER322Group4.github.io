@@ -18,6 +18,7 @@ NOTE: You do not have to fill them all out. <br />
 <br />
 </span>
 <!-- create dropdowns for queiries -->
+
 <p>
 League:  <br />
 <select league = "lea">
@@ -27,19 +28,60 @@ League:  <br />
 </select>
 </p>
 
-<p>
-PlayerID:  <br />
-<select playerID = "pID">
-<option value  =""?>Select...</option>
-</select>
-</p>
 
-<p>
+PlayerID:  <br />
+<?php
+mysql_connect('localhost','root','password');
+mysql_select_db('Baseball');
+
+$sql = "SELECT playerID FROM players";
+$result = mysql_query($sql);
+
+echo "<select playerID = 'pID'>";
+while ($row = mysql_fetch_array($result)) {
+	echo "<option value = '". $row['playerID'] ."'>" . $row['playerID'] ."</option>";
+}
+echo "</select>";
+?>
+
+<br />
+<br />
+
 GameID: <br />
-<select gameID = "gID"> 
-<option value  =""?>Select...</option>
-</select>
-</p>
+<?php
+mysql_connect('localhost','root','password');
+mysql_select_db('Baseball');
+
+$sql = "SELECT gameID FROM games";
+$result = mysql_query($sql);
+
+echo "<select gameID = 'gID'>";
+while ($row = mysql_fetch_array($result)) {
+	echo "<option value = '". $row['gameID'] ."'>" . $row['gameID'] ."</option>";
+}
+echo "</select>";
+?>
+
+<br />
+<br />
+
+Teams:  <br />
+<?php
+mysql_connect('localhost','root','password');
+mysql_select_db('Baseball');
+
+$sql = "SELECT name FROM teams";
+$result = mysql_query($sql);
+
+echo "<select name = 'tname'>";
+while ($row = mysql_fetch_array($result)) {
+	echo "<option value = '". $row['name'] ."'>" . $row['name'] ."</option>";
+}
+echo "</select>";
+?>
+
+<br />
+<br />
 
 <p>
 Inning: <br />
@@ -56,4 +98,5 @@ Inning: <br />
 <option value  = "9"?>9</option>
 </select>
 </p>
+
 
