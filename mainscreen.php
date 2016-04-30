@@ -38,6 +38,7 @@ $sql = "SELECT playerID FROM players";
 $result = mysql_query($sql);
 
 echo "<select playerID = 'pID'>";
+echo "<option value = \"\"?>Select...</option>";
 while ($row = mysql_fetch_array($result)) {
 	echo "<option value = '". $row['playerID'] ."'>" . $row['playerID'] ."</option>";
 }
@@ -56,6 +57,7 @@ $sql = "SELECT gameID FROM games";
 $result = mysql_query($sql);
 
 echo "<select gameID = 'gID'>";
+echo "<option value = \"\"?>Select...</option>";
 while ($row = mysql_fetch_array($result)) {
 	echo "<option value = '". $row['gameID'] ."'>" . $row['gameID'] ."</option>";
 }
@@ -74,6 +76,7 @@ $sql = "SELECT name FROM teams";
 $result = mysql_query($sql);
 
 echo "<select name = 'tname'>";
+echo "<option value = \"\"?>Select...</option>";
 while ($row = mysql_fetch_array($result)) {
 	echo "<option value = '". $row['name'] ."'>" . $row['name'] ."</option>";
 }
