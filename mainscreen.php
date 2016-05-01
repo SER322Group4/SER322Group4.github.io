@@ -9,7 +9,7 @@ font-size: large }
 <body>
 <h1>Baseball Statistics</h1>
 <!-- post form data to form.php -->
-<form method = "post" action = "gamepage.php">
+<form method = "post" action = "gamePage.php">
 PlayerID:  <br />
 <?php
 mysql_connect('localhost','root','password');
