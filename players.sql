@@ -1,31 +1,4 @@
--- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
---
--- Host: 127.0.0.1
--- Generation Time: May 01, 2016 at 01:33 AM
--- Server version: 10.1.13-MariaDB
--- PHP Version: 5.6.20
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `ser322baseball`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `players`
---
-
+-- Create a table called players
 CREATE TABLE `players` (
   `playerID` int(4) NOT NULL,
   `firstName` varchar(14) NOT NULL,
@@ -40,10 +13,11 @@ CREATE TABLE `players` (
   `currentTeam` varchar(17) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `players`
---
+-- Make playerID attribute the Primary Key
+ALTER TABLE `players`
+  ADD PRIMARY KEY (`playerID`);
 
+-- Insert data into players
 INSERT INTO `players` (`playerID`, `firstName`, `lastName`, `position`, `leftyOrRighty`, `careerRBI`, `careerBA`, `careerHR`, `careerERA`, `dob`, `currentTeam`) VALUES
 (1, 'Julio', 'Teheran', 'SP', 'R', 10, 0.133, 0, 3.49, '1991-01-27', 'Braves'),
 (2, 'AJ', 'Pierzynshi', 'C', 'L', 891, 0.282, 186, 0, '1976-12-30', 'Braves'),
@@ -85,17 +59,3 @@ INSERT INTO `players` (`playerID`, `firstName`, `lastName`, `position`, `leftyOr
 (38, 'Kevin', 'Kiermaier', 'CF', 'L', 81, 0.262, 23, 0, '1990-04-22', 'Rays'),
 (39, 'Steven', 'Souza Jr', 'RF', 'R', 53, 0.228, 23, 0, '1989-04-24', 'Rays'),
 (40, 'Alex', 'Colome', 'RP', 'R', 0, 0, 0, 3.42, '1988-12-31', 'Rays');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `players`
---
-ALTER TABLE `players`
-  ADD PRIMARY KEY (`playerID`);
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

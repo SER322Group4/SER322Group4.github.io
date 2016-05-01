@@ -1,14 +1,15 @@
--- Creating teams table
+-- Create a table called team
 CREATE TABLE `teams` (
   `name` varchar(17) NOT NULL,
   `city` varchar(13) NOT NULL,
-  `league` varchar(8) NOT NULL);
-  
-  -- Adds the Primary Key attribute to team name
+  `league` varchar(8) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- Make name attribute the Primary Key
 ALTER TABLE `teams`
   ADD PRIMARY KEY (`name`);
   
--- This is the data for the teams table
+  -- Insert data into teams
 INSERT INTO `teams` (`name`, `city`, `league`) VALUES
 ('Braves', 'Atlanta', 'National'),
 ('Nationals', 'Washington', 'National'),
