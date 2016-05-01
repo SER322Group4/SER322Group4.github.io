@@ -3,9 +3,9 @@ session_start();
 ?>
 <form method = "post" action = "resultsPage.php">
 <?php
-$selectedPlayer = $_SESSION['pID'];
-$selectedGame = $_POST['gameID'];
 $selectedInning = $_POST['inning'];
+$selectedPlayer = $_SESSION['pID'];
+$selectedGame = $_SESSION['gameID'];
 mysql_connect('localhost','root','password');
 mysql_select_db('Baseball');
 
