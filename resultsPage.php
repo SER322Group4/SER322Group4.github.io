@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Results</title>
+</head>
+<body>
 <?php
 session_start();
 $selectedInning = $_POST['inning'];
@@ -9,5 +15,7 @@ echo "Inning: " . $selectedInning;
 echo "</br>";
 echo "Player ID: " . $selectedPlayer;
 ?>
-
+<a href="mainscreen.php">Back to main page</a>
+</body>
+</html>
 <!--SELECT * FROM seasonStats WHERE playerID = $selectedPlayer AND gameID =$selectedGame AND inning = $selectedInning;-->
