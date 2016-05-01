@@ -1,7 +1,7 @@
 <?php
 session_start();
 ?>
-<form method = "post" action = "resultsPage.php">
+<form method = "post" action = "mainscreen.php">
 <?php
 $selectedInning = $_POST['inning'];
 $selectedPlayer = $_SESSION['pID'];
@@ -54,3 +54,15 @@ echo '</tr>';
 }
 
 echo '</table>';
+?>
+
+<p align = left>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<input type="submit" name="submit" value="Restart Query" />
+</p>
+</form>
