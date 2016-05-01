@@ -15,6 +15,7 @@ echo "Inning: " . $selectedInning;
 echo "</br>";
 echo "Player ID: " . $selectedPlayer;
 ?>
+<br>
 <a href="mainscreen.php">Back to main page</a>
 </body>
 </html>
