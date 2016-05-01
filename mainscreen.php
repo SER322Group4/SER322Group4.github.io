@@ -31,7 +31,7 @@ League:  <br />
 
 PlayerID:  <br />
 <?php
-mysql_connect('localhost','root','password');
+mysql_connect('localhost','root','[sddeptf47');
 mysql_select_db('Baseball');
 
 $sql = "SELECT playerID FROM players";
@@ -50,7 +50,7 @@ echo "</select>";
 
 GameID: <br />
 <?php
-mysql_connect('localhost','root','password');
+mysql_connect('localhost','root','[sddeptf47');
 mysql_select_db('Baseball');
 
 $sql = "SELECT gameID FROM games";
@@ -67,9 +67,9 @@ echo "</select>";
 <br />
 <br />
 
-Teams:  <br />
+Teams: <br />
 <?php
-mysql_connect('localhost','root','password');
+mysql_connect('localhost','root','[sddeptf47');
 mysql_select_db('Baseball');
 
 $sql = "SELECT name FROM teams";
@@ -83,7 +83,6 @@ while ($row = mysql_fetch_array($result)) {
 echo "</select>";
 ?>
 
-<br />
 <br />
 
 <p>
