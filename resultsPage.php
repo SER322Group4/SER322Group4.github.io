@@ -35,12 +35,6 @@ cellspacing="5" cellpadding="8">
 <td align="left"><b>pitHits</b></td>
 <td align="left"><b>pitWalks</b></td>
 <td align="left"><b>pitER</b></td></tr>';
-if (isset($results)){
-	echo "results is set";
-} else {
-	echo "is not set";
-
-}
 while($row = mysql_fetch_array($result)){
 	echo '<tr><td align="left">' .
 	$row['atBats'] . '</td><td align="left">' .
@@ -53,24 +47,9 @@ while($row = mysql_fetch_array($result)){
 	$row['pitKs'] . '</td><td align="left">' .
 	$row['pitHits'] . '</td><td align="left">' .
 	$row['pitWalks'] . '</td><td align="left">' .
-$row['pitER'] . '</td>';
-} else {
-		echo '<tr><td align="left">' .
-	'N/A' . '</td><td align="left">' .
-	'N/A' . '</td><td align="left">' .
-	'N/A' . '</td><td align="left">' .
-	'N/A' . '</td><td align="left">' .
-	'N/A' . '</td><td align="left">' .
-	'N/A' . '</td><td align="left">' .
-	'N/A' . '</td><td align="left">' .
-	'N/A' . '</td><td align="left">' .
-	'N/A' . '</td><td align="left">' .
-	'N/A' . '</td><td align="left">' .
-	'N/A' . '</td>';
+	$row['pitER'] . '</td>';
 }
 echo '</tr>';
-}
-
 echo '</table>';
 ?>
 
