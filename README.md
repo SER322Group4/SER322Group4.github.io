@@ -9,7 +9,6 @@ David Worrell: ER Diagram and tester and Video and Readme
 1: Install Xampp
 -- You can use the video () to set up your Xammpp the same we we set up ours.
 -- We used localhost:1234/
--- user = root
 -- password = password
 
 2: Set up
