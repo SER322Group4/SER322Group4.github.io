@@ -11,7 +11,8 @@ Baseball Database for the final project.
 
 2: Set up
 -- make your database 'Baseball'
--- import the (4) SQL databases
+-- import the (4) SQL databases in the SQL folder
+-- add the PHP/HTML files to the Xampp/htdocs folder
 
 3: In a browser go to localhost:1234/mainscreen.php and you will be able to run through the database.
 
